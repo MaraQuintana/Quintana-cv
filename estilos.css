@@ -11,11 +11,11 @@ header img {
     width: 56px;
     height: 30px;
 }
-/*Me aparecen los puntos por defecto de las listas y no estoy segura de porque no los puedo sacar*/
 .botonera ul {
     text-decoration: none;
+    list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .botonera {
     display: flex;
@@ -35,4 +35,40 @@ a:hover{
     width: 100%;
     padding: 3px;
 	border-bottom: 2px solid #ffffff;
+}
+head {
+    background-color: #DADADA;
+}
+.fotop {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.datos h3{
+    color: black;
+}
+.datos{
+    display: flex;
+    box-sizing: border-box;
+    color:#ffffff;
+    width: 350px;
+    font-size: 12px;
+    flex-direction: column;
+    padding: 8px 0px; 
+    background-color: #908E8E;
+    margin-top: 20px;
+    
+}
+.datos ul{
+    list-style: none;
+    
+}
+.columna a{
+    display: flex;
+    padding-left: 50px;
+}
+.columna b{
+   display: flex;
+
 }
