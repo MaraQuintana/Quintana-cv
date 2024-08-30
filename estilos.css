@@ -11,6 +11,7 @@ header img {
     width: 56px;
     height: 30px;
 }
+/*Me aparecen los puntos por defecto de las listas y no estoy segura de porque no los puedo sacar*/
 .botonera ul {
     text-decoration: none;
     display: flex;
