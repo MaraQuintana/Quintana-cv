@@ -1,77 +1,111 @@
 @charset "utf-8";
 /* CSS Document */
 
-*{
+*{ /*general*/
     margin: 0px;
 	padding:0px;
     font-family: "Montserrat", system-ui;
+    box-sizing: border-box;
 }
+
+   /*botonera*/
 header img {
     display: flex;
     width: 56px;
     height: 30px;
-}
-.botonera ul {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    gap: 30px;
+    box-sizing: border-box;
 }
 .botonera {
     display: flex;
     width: 100%;
     background-color: rgb(39, 39, 39);
-    padding: 20px;
+    padding: 20px 30px;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
+}
+.botonera ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
 }
 .botonera a {
     text-decoration: none;
-    color: #ffffff;
+    color: #DADADA;
 }
-a:hover{
-    color: #9A48D0;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 3px;
-	border-bottom: 2px solid #ffffff;
+.botonera a:hover {
+    padding-bottom: 3px;
+	border-bottom: 2px solid #9A48D0;
 }
-head {
+
+   /*cuerpo*/    
+main {
     background-color: #DADADA;
+    padding: 40px 40px 40px 70px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.fotop {
+h1 {
+    font-variant: small-caps;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.columnas {
     display: flex;
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 800px;
+    padding: 40px 40px;
+    gap: 60px;
 }
-.datos h3{
+.columnas ul {
+    list-style: none;
+    padding: 10px 40px;
+}
+.bloque {
+    width: 800px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+    /*datos irrelevantes*/
+.datos h3 {
     color: black;
 }
-.datos{
+.datos {
     display: flex;
     box-sizing: border-box;
     color:#ffffff;
     width: 350px;
     font-size: 12px;
     flex-direction: column;
-    padding: 8px 0px; 
+    padding: 8px; 
     background-color: #908E8E;
     margin-top: 20px;
-    
 }
-.datos ul{
+.datos ul {
     list-style: none;
-    
 }
-.columna a{
-    display: flex;
-    padding-left: 50px;
-}
-.columna b{
-   display: flex;
+    /*pies*/*
 
-}
-footer{
+footer {
     background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #DADADA;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+.redes {
+    display: flex;
+    gap: 20px;
 }
