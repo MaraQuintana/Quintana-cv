@@ -1,121 +1,172 @@
 @charset "utf-8";
 /* CSS Document */
 
-*{ /*general*/
-    margin: 0px;
-	padding:0px;
-    font-family: "Montserrat", system-ui;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", system-ui;
 }
 
-   /*botonera*/
+/* encabezado y la botonera */
 header img {
     display: flex;
     width: 150px;
     height: 60px;
     box-sizing: border-box;
 }
+
 .botonera {
     display: flex;
-    width: 100%;
-    background-color: rgb(39, 39, 39);
-    padding: 20px 60px 20px 20px;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+    background-color: rgb(39, 39, 39);
 }
+
 .botonera ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 40px;
 }
+
 .botonera a {
     text-decoration: none;
     color: #DADADA;
 }
+
 .botonera a:hover {
     padding-bottom: 5px;
-	border-bottom: 3px solid #9A48D0;
+    border-bottom: 3px solid #9A48D0;
 }
 
-   /*cuerpo*/    
 main {
+    padding: 40px 110px;
     background-color: #DADADA;
-    box-sizing: border-box; 
-    padding: 40px 110px 40px 110px;
 }
-p{
-    line-height: 30px;
-}
+
 h1 {
-    font-variant: small-caps;
-    font-size: 2.5em;
-    color: #ffffff;
     max-width: 200px;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    color: #ffffff;
     line-height: 35px;
 }
+
 h2 {
     font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #9A48D0;
 }
-.descripcion{
-    margin: 40px 0px 10px 0px;
+
+p {
+    line-height: 30px;
 }
+
+.descripcion {
+    margin: 40px 0 10px 0;
+}
+
 .seccionuno {
     display: flex;
-    padding: 60px 60px;
+    padding: 60px;
     gap: 100px;
 }
+
 .seccionuno img {
-    box-shadow: 30px 70px 0px 0px #888;
+    box-shadow: 30px 70px 0 0 #888;
 }
-.seccionuno ul {
-    list-style: none;
-    padding: 10px 0px 0px 40px;
-}
-.dosfilas{
+
+.dosfilas {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 }
-.bloque {
-    width: 800px;
-    box-sizing: border-box;
-    padding: 40px;
+
+.estudios, .habilidades {
+    max-width: 485px;
 }
 
-    /*datos irrelevantes*/
+.seccionuno ul {
+    list-style: none;
+    padding-left: 40px;
+    line-height: 30px;
+}
+.preprensa ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+.puesto ol {
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+footer p{
+    line-height: 20px;
+}
+
+.hobbies div{
+    padding: 10px 0px 0px 40px;
+}
+.hobbies{
+    padding: 60px;
+}
+/* Pie de imagen */
+.datos {
+    width: 350px;
+    padding: 8px 0 0 50px;
+    color: #ffffff;
+    font-size: 12px;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
 .datos h3 {
     color: black;
 }
-.datos {
-    box-sizing: border-box;
-    color: #ffffff;
-    width: 350px;
-    font-size: 12px;
-    flex-direction: column;
-    padding: 8px 0px 0px 50px;
-}
+
 .datos ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     color: #ffffff;
     font-size: 12px;
     font-weight: 100;
-    padding: 0px;
+    line-height: 1.5;
 }
-    /*pies*/*
 
-footer {
-    background-color: rgb(39, 39, 39);
+/* sección de experiencia */
+.experiencia {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #DADADA;
-    box-sizing: border-box;
-    padding: 20px;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.preprensa {
+    display: flex;
+    gap: 100px;
+    padding-top: 10px;
+}
+
+.puesto {
+    max-width: 770px;
+    line-height: 30px;
+}
+
+/* pie de página */
+footer {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(39, 39, 39);
+    color: #DADADA;
     font-size: 0.8em;
 }
+
 .redes {
     display: flex;
     gap: 20px;
