@@ -42,8 +42,17 @@ header img {
 }
 
 main {
-    padding: 40px 110px;
+    padding: 100px 170px 50px 170px;
     background-color: #DADADA;
+}
+.preprensa a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+.preprensa a:hover{
+    font-weight: bold;
+    color:#9A48D0;
 }
 
 h1 {
@@ -57,12 +66,11 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #9A48D0;
 }
 
 p {
     line-height: 30px;
+    font-size: 1em;
 }
 
 .descripcion {
@@ -71,7 +79,6 @@ p {
 
 .seccionuno {
     display: flex;
-    padding: 60px;
     gap: 100px;
 }
 
@@ -103,16 +110,17 @@ p {
     padding-left: 60px;
     padding-top: 10px;
 }
-
+.imagenes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 footer p{
     line-height: 20px;
 }
 
 .hobbies div{
     padding: 10px 0px 0px 40px;
-}
-.hobbies{
-    padding: 60px;
 }
 /* Pie de imagen */
 .datos {
@@ -142,7 +150,8 @@ footer p{
 .experiencia {
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    height: 900px;
+    justify-content: center;
 }
 
 .preprensa {
@@ -152,7 +161,7 @@ footer p{
 }
 
 .puesto {
-    max-width: 770px;
+    max-width: 800px;
     line-height: 30px;
 }
 
