@@ -41,15 +41,18 @@ header img {
     border-bottom: 3px solid #9A48D0;
 }
 
+/* cuerpo de la web */
 main {
     padding: 100px 170px 50px 170px;
     background-color: #DADADA;
 }
+
 .preprensa a {
     box-sizing: border-box;
     text-decoration: none;
     color: black;
 }
+
 .preprensa a:hover{
     font-weight: bold;
     color:#9A48D0;
@@ -116,18 +119,13 @@ p {
     padding-left: 60px;
     padding-top: 10px;
 }
-.imagenes{
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+.pinterest img{
+    margin: 10px 0px;
 }
-.imagenes img{
-    display: flex;
+.pinterest{
     columns: 4 350px;
-    margin: 20px 0px;
 }
+
 footer p{
     line-height: 20px;
 }
@@ -135,10 +133,11 @@ footer p{
 .hobbies div{
     padding-left: 40px;
 }
+
 /* Pie de imagen */
 .datos {
     width: 350px;
-    padding: 8px 0 0 50px;
+    padding: 6px 0 0 50px;
     color: #ffffff;
     font-size: 12px;
     flex-direction: column;
