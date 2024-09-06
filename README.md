@@ -5,3 +5,4 @@ Trabajo con pantalla tamaño 1920 de resolución.
 Para este primer trabajo mire referencias de currículums e intente que mantenga una estructura dividida por bloques. Generé un css con un estilo personal que fui desarrollando en figma e intenté alejarme de las estructuras de porfolio.
 
 Link a respositorio: [git@github.com:MaraQuintana/Quintana-cv.git](https://github.com/MaraQuintana/Quintana-cv)
+Editor de codigo utilizado fue visual code
