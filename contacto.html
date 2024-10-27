@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Quintana-porfolio</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAV -->
+    <header>
+        <nav class="botonera">
+            <img id="logo" src="img/logo-mq.svg" witdth="72px" heigth="37px" alt="logo"/>
+            <ul>
+                <li><a href="proyectos.html" target="_self">Proyectos</a></li>
+                <li><a href="sobremi.html" target="_self">Sobre mí</a></li>
+                <li><a href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO / FORM -->
+    <main>
+        <section class="formulario">
+            <img class="tipografia" src="img/tipografia/contactos.svg" width="390px" height="70px" alt="palabra proyectos">
+            
+            <form method="post" action="" target="_blank" enctype="text/plain">
+                <div class="dos-columnas-form">
+                    <div class="columnas-form">
+                        <label class="label" for="nombre">Nombres*</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ej.: Mara" required>
+                    </div>
+                    <div class="columnas-form">
+                        <label class="label" for="apellido">Apellidos*</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ej.: Quintana" required>
+                    </div>
+                </div>
+
+                <label class="label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="nombre@gmail.com">
+
+                <div class="dos-columnas-form">
+                    <div class="columnas-form">
+                        <label class="label" for="telefono">Teléfono*</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="(+54) 011 0000 0000" required>
+                    </div>
+                    <div class="columnas-form">
+                        <label class="label" for="url">Empresa</label>
+                        <input type="url" name="url" id="url" placeholder="https://ejemplo.com">
+                    </div>
+                </div>
+
+                <label class="label" for="proyecto">Proyecto</label>
+                <select id="proyecto" name="proyecto">
+                    <option value="branding">Branding</option>
+                    <option value="editorial">Diseño editorial</option>
+                    <option value="web">Diseño web</option>
+                    <option value="ilustracion">Ilustración</option>
+                    <option value="infografia">Infografía</option>
+                    <option value="packaging">Diseño de packaging</option>
+                    <option value="motiongraphics">Motion graphics</option>
+                </select>
+
+                <label class="label" for="mensaje">Mensaje*</label>
+                <textarea name="mensaje" id="mensaje" maxlength="600" placeholder="Contame tu idea para trabajarla juntos" required></textarea>
+
+                <div class="enviar-borrar">
+                    <input type="reset" value="Borrar" class="reset">
+                    <input type="submit" value="Enviar" class="submit">                    
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PAG-->
+    <footer>
+        <div class="footer-derecha">
+            <img src="img/icon-wis.svg" width="100px" height="61px" alt="logo wis">
+            <ul>
+                <li><p>© 2024 Quintana_Mara. Todos los derechos reservados.</p></li>
+                <li><p>TP3_Porfolio / Cátedra Wischñevsky</p></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
+        </div>
+    </footer>
+
+    <div class="redes-fixed">
+        <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
+        <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
+    </div>
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+    <script src="cursor.js"></script>
+</body>
+</html>

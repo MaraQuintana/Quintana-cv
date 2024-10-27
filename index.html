@@ -1,121 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Quintana-porfolio</title>
-        <link href="estilos.css" rel="stylesheet" type="text/css" />
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8"/>
+    <title>Quintana-porfolio</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <header>
-           <nav class="botonera">
-                <div class="logo">
-                    <img src="img/logo-mq.svg" witdth="72px" heigth="37px" alt="logo"/>
-                </div>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav class="botonera">
+            <img id="logo" src="img/logo-mq.svg" witdth="72px" heigth="37px" alt="logo"/>
+            <ul>
+                <li><a href="proyectos.html" target="_self">Proyectos</a></li>
+                <li><a href="sobremi.html" target="_self">Sobre mí</a></li>
+                <li><a href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO-->
+    <main id="inicio">
+        <section class="portada">
+            <div class="quintana">
+                <img src="img/tipografia/quintana.svg" witdth="1030px" heigth="220px" alt="quintana"/>
                 <ul>
-                    <li><a href="proyectos.html" target="_self">Proyectos</a></li>
-                    <li><a href="sobremi.html" target="_self">Sobre mí</a></li>
-                    <li><a href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
+                    <li>Bienvenido a mi porfolio_</li>
+                    <li>Espacio lleno de dedicación para crear</li>
                 </ul>
-            </nav>
-        </header>
-        <!-- cuerpo de web-->
-        <main>
-            <section class="portada">
-                <div>
-                    <img src="img/quintana.svg" witdth="1030px" heigth="220px" alt="quintana"/>
-                    <ul>
-                        <li>Bienvenido a mi porfolio_</li>
-                        <li>Espacio lleno de dedicación para crear</li>
-                    </ul>
-                </div>
-                <img src="img/flechas-scroll.svg" alt="flechas portada">
-            </section>
-            <section>
-                <div>
-                    <img src="img/hola.svg" width="258px" height="88px" alt="hola">
-                    <div>
-                        <p>Soy Mara Quintana, aunque tengo diversos apodos. Estudiante de diseño y comunicación visual, en la universidad nacional de Lanús desde el año 2020, época en la que se disparo una pandemia mundial.</p>
-                        <p>Me encanta pintar, dibujar y diseñar, intento demostrar la expresión creativa en todas sus formas. Soy muy practica con cualquier actividad manual, lo que genera gran motivación para experimentar en nuevas áreas como cerámica, carpintería, costura, entre otros. Suelo ser muy detallista y me encanta colaborar en los proyectos con colegas que conocí en las diferentes cátedras.</p>
-                        <p>Como objetivos personales quiero crear diseños que inspiren y que aporten valor visual y funcional a las marcas, contribuyendo al desarrollo de identidades gráficas sólidas y memorables.</p>
-                    </div>
-                    <img src="img/diamantes.svg" width="103px" height="65px" alt="diamantes">
-                </div>
-            </section>
-            <!-- seccion sin usar por ahora
-            <article class="experiencia">
-                <h2>Experiencia laboral</h2>
-                <div class="preprensa"> 
-                    <ul>
-                        <li><a href="http://www.papelera-orlando.com.ar" target="_blank">Papelera Orlando S.A.C.I.</a></li>
-                        <li>Tel.: +54 11 4303 4371</li>
-                        <li><a href="mailto:quintanamara25@gmail.com" target="_blank">Contacto</a></li> 
-                    </ul>
-                    <div class="puesto">
-                        <p>Soy operaria de preprensa flexografica ya hace 2 años, implica trabajar en la etapa del proceso de producción gráfica que se realiza antes de la impresión propiamente dicha. Este rol es crucial en la industria de la impresión y el packaging, ya que asegura que todos los elementos gráficos y textos estén correctamente preparados para ser impresos.</p>
-                        <p>Algunas de mis tareas principales son:</p>
-                        <ol>
-                            <li>Manejo de software especializado: Utilizar programas como Adobe Illustrator, Photoshop, InDesign, y software de imposición y de gestión de color para preparar los archivos.</li>
-                            <li>Revisión y preparación de archivos: Verificar que los archivos digitales recibidos estén correctos y listos para la impresión.</li>
-                            <li>Corrección de errores: Identificar y corregir errores en los archivos, como problemas de color, fuentes faltantes, o imágenes de baja resolución.</li>
-                            <li>Trapping y Sobreimpresión: Implementar técnicas de trapping, que son esenciales en flexografía debido a las posibles variaciones en el registro durante la impresión. Establecer parámetros de sobreimpresión para evitar problemas de registro y garantizar la uniformidad en la reproducción de colores. </li>
-                            <li>Generación de pruebas: Crear pruebas digitales o físicas (como cromalines) que muestran cómo se verá el trabajo final antes de su impresión.</li>
-                            <li>Imposición: Organizar las etiquetas o elementos gráficos en un diseño que maximice la eficiencia de la impresión y minimice el desperdicio de papel o material.</li>
-                        </ol> 
-                    </div>
-                </div>
-            </article>-->
-            <section>
-                <h2>Trabajos destacados</h2>
-                <div class="pinterest">
-                    <img src="img/Trabajos/infografia.jpg" width="350px" height="1027px" alt="infografia">
-                    <img src="img/Trabajos/lettering-01.jpg" width="350px" height="492px" alt="afiche caida">
-                    <img src="img/Trabajos/m3-mancha2.jpg" width="350px" height="350px" alt="espiral">
-                    <img src="img/Trabajos/lasdcape.jpg" width="350px" height="350px" alt="mapa">
-                    <img src="img/Trabajos/m3-mancha.jpg" width="350px" height="350px" alt="lamina1">
-                    <img src="img/Trabajos/lata.jpg" width="350px" height="492px" alt="lata">
-                    <img src="img/Trabajos/lettering-02.jpg" width="350px" height="492px" alt="afiche letra d">
-                    <img src="img/Trabajos/trasher.jpg" width="350px" height="350px" alt="tres latas">
-                    <img src="img/Trabajos/princesa.jpeg" width="350px" height="508px" alt="princesa">
-                    <img src="img/Trabajos/perla.jpeg" width="350px" height="243px" alt="cuadro perla">
-                    <img src="img/Trabajos/lasdcape20.jpg" width="350px" height="1398px" alt="vertical">
-                </div>
-                <div>
-                    <h3>Ver más</h3>
-                    <img src="img/flecha.svg" width="33px" height="41px" alt="flecha ir a">
-                </div>
-            </section>
-            <div class="redes-fixed">
-                <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
-                <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
             </div>
-            <div class="cursor-personalizado"></div>
-            <!-- se mudara a sobre mi
-            <section class="hobbies">
-                <h2>Algo mas sobre mí</h2>
-                <div>
-                    <p>Soy instrutora de acrobacia sobre telas y trapecio (actividades de circo).</p>
-                    <p>Me encanta coser, por lo que me encargan (mi familia) a arreglar prendas que ya se deben tirar.</p>
-                    <p>En mis pocos momentos libres me gusta dibujar y pintar.</p>
-                    <p>Tengo una familia creativa y con buenos criterios sobre el diseño.</p>
-                    <p>Tengo un amor muy grande por los animales y por consecuencia estudie para ser adiestradora de caninos y ya tengo mi titulo.</p>
+            <img class="flechas-scroll" src="img/flechas-scroll.svg" width="75px" height="94px" alt="flechas portada">
+        </section>
+
+        <!-- HOLA -->
+        <section>
+            <div class="presentacion">
+                <img class="tipografia" src="img/tipografia/hola.svg" width="258px" height="88px" alt="hola">
+                <div class="texto-presentacion">
+                    <p>Soy Mara Quintana, aunque tengo diversos apodos. Estudiante de diseño y comunicación visual, en la universidad nacional de Lanús desde el año 2020, época en la que se disparo una pandemia mundial.</p>
+                    <p>Me encanta pintar, dibujar y diseñar, intento demostrar la expresión creativa en todas sus formas. Soy muy practica con cualquier actividad manual, lo que genera gran motivación para experimentar en nuevas áreas como cerámica, carpintería, costura, entre otros. Suelo ser muy detallista y me encanta colaborar en los proyectos con colegas que conocí en las diferentes cátedras.</p>
+                    <p>Como objetivos personales quiero crear diseños que inspiren y que aporten valor visual y funcional a las marcas, contribuyendo al desarrollo de identidades gráficas sólidas y memorables.</p>
                 </div>
-            </section>-->
-        </main>
-        <!-- pie de pagina-->
-        <footer>
-            <div>
-                <p>© 2024 Quintana_Mara. Todos los derechos reservados.</p>
-                <p>TP3_Porfolio / Cátedra Wischñevsky</p>
+                <img class="diamantes" src="img/diamantes.svg" width="103px" height="65px" alt="diamantes">              
             </div>
-            <div class="redes">
-                <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
-                <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>  
-            </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <!-- PIE DE PAG-->
+    <footer>
+        <div class="footer-derecha">
+            <img src="img/icon-wis.svg" width="100px" height="61px" alt="logo wis">
+            <ul>
+                <li><p>© 2024 Quintana_Mara. Todos los derechos reservados.</p></li>
+                <li><p>TP3_Porfolio / Cátedra Wischñevsky</p></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
+        </div>
+    </footer>
+
+    <div class="redes-fixed">
+        <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
+        <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
+    </div>
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+    <script src="cursor.js"></script>
+</body>
 </html>
