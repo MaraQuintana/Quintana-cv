@@ -16,7 +16,7 @@ body {
 
 /* encabezado y la botonera */
 
-#logo{
+.logo{
     max-width: 72px;
     height: auto;
 }
@@ -48,15 +48,10 @@ body {
 }
 
 
-
-
-/* cuerpo de la web */
-
-/* INDEX */ 
 /*---------------------- PORTADA ----------------------- */
 
 .portada {
-    background-color: #888;
+    background-image: url(img/img-presentacion.jpg);
     width: 100%;
     height: 850px;
     display: flex;
@@ -84,10 +79,10 @@ body {
 }
 
 .flechas-scroll {
-    animation: move infinite 2s alternate ease-in-out;
+    animation: icon infinite 2s alternate ease-in-out;
 }
 
-@keyframes move {
+@keyframes icon {
     from {
         transform: translateY(-50px);
     }
@@ -143,6 +138,10 @@ h2 {
     width: fit-content;
     padding: 0px 30px 5px 0px;
     margin-bottom: 10px;
+}
+
+.datos h3 {
+    color: black;
 }
 
 p {
@@ -227,10 +226,6 @@ footer p{
     box-sizing: border-box;
 }
 
-.datos h3 {
-    color: black;
-}
-
 .datos ul {
     list-style: none;
     padding: 0;
@@ -266,7 +261,7 @@ footer p{
     align-items: flex-end;
     gap: 30px;
     justify-content: center;
-    border-top: 3px solid #590D8B;
+    /*border-top: 3px solid #590D8B;*/
     padding-top: 30px;
 }
 
@@ -297,7 +292,7 @@ footer p{
     gap: 30px;
 }
 
-section .tipografia {
+#tipografia {
     margin-left: 136px;
     padding: 50px 0px 0px;
 }
@@ -309,16 +304,46 @@ section .tipografia {
 }
 
 .marciano {
-    animation: marciano infinite 5s alternate;
+    animation: move infinite 5s alternate;
 }
 
-@keyframes marciano {
+@keyframes move {
     from {
         transform: rotate(-20px);
     }
 
     to {
         transform: rotate(50px);
+    }
+}
+
+/* ----------------------- SLIDER PROGRAMAS ------------------ */
+
+.slider-programas{
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.slider-programas .slide-track{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    animation: scroll 10s linear infinite;
+    width: calc(90px * 28);
+    -webkit-animation: scroll 10s linear infinite;
+}
+
+.slider-programas .slide img{
+    width: 100%;
+    height: auto;
+}
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+        -webkit-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-90px * 7));
+        -webkit-transform: translateX(calc(-90px * 7));
     }
 }
 
