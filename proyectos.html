@@ -10,49 +10,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="volver">
     <!-- NAV -->
     <header>
         <nav class="botonera">
-            <img class="logo" id="logo" src="img/logo-mq.svg" witdth="72px" heigth="37px" alt="logo"/>
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="img/logo-mq.svg" witdth="100%" heigth="auto" alt="logo">
+                </a>
+            </div>    
             <ul>
-                <li><a href="proyectos.html" target="_self">Proyectos</a></li>
-                <li><a href="sobremi.html" target="_self">Sobre mí</a></li>
-                <li><a href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
+                <li><a class="boton" href="proyectos.html" target="_self">Proyectos</a></li>
+                <li><a class="boton" href="sobremi.html" target="_self">Sobre mí</a></li>
+                <li><a class="boton" href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
             </ul>
         </nav>
     </header>
 
     <!-- CUERPO -->
-    <main>  
-        <section class="proyectos">
-            <img id="tipografia" class="tipografia" src="img/tipografia/proyectos.svg">
-            <article class="thrasher">
-                <div class="fila1-thrasher">
+    <main>
+        <img id="tipografia" class="tipografia" src="img/tipografia/proyectos.svg">
+        <section>
+            <!-- thrasher -->
+            <article class="centrado">
+                <div class="duo-filas-end">
                     <img src="img/thrasher/latas-flotando.jpg" width="810px" height="380px" alt="tres latas">
-                    <ul>
+                    <ul class="descripcion">
                         <li><h5>THRASHER</h5></li>
                         <li>Trabajo desarrollado en la materia taller de diseño 3 - Catedra Ibarra.</li>
                         <li>Desarrollo de sistema de identidad de 3 latas de bebida a elección sobre marca reversionada</li>
                     </ul>
                 </div>
-                <div class="fila2-thrasher">
+                <div class="duo-filas">
                     <img src="img/thrasher/chica-grafity.jpg" width="600px" height="710px" alt="chica graffiteada">
-                    <div>
-                        <video src="img/thrasher/video/latas-loop.mp4" width="600px" height="414px" autoplay loop></video>
+                    <div class="columna-thrasher">
+                        <video src="img/thrasher/video/latas.mp4" width="600px" height="414px" autoplay loop muted>
+                            <source src="img/thrasher/video/latas.mp4" type="video/mp4">
+                        </video>
                         <img id="marciano" src="img/thrasher/animacion/marciano.svg" alt="marciano">
                     </div>
                 </div>
                 <div class="fila3-thrasher">
                     <img src="img/thrasher/muck-patineta.jpg" width="390px" height="520px" alt="mockup patineta">
                     <img class="diablito" src="img/thrasher/animacion/diablito.svg" alt="diablito">
-                    <ul>
+                    <ul class="descripcion">
                         <li>Juego de contraste entre imagen e ilustraciones, se trata de una bebida energizante de tipo isotónica. por lo que se intenta transmitir la energía que te aporta.</li>
                         <li>Se utilizaron imágenes urbanas y deportistas aficionados a los deportes extremos.</li>
                     </ul>                    
-                </div>
-                
+                </div>                
             </article>
+
+            <!-- lettering -->
+            <article class="centrado-dos">
+                <div class="duo-filas-end">
+                    <video src="img/lettering/video/corto.mp4" width="390px" height="390px" autoplay loop muted>
+                        <source src="img/lettering/video/corto.mp4" type="video/mp4">
+                    </video>
+                    <ul class="descripcion">
+                        <li><h5>LETTERING</h5></li>
+                        <li>Trabajo desarrollado en la materia “espacio tipográfico 3” - Catedra Sanchez</li>
+                        <li>Desarrollo de lettering con temática a elección.</li>
+                    </ul>                    
+                </div>
+                <div>
+                    <img src="img/lettering/afiches.jpg" width="1230px" height="623px" alt="afiches">
+                </div>
+                <div class="duo-filas-end">
+                    <img src="img/lettering/entradas.jpg" width="428px" height="390px" alt="entradas">
+                    <ul class="descripcion">
+                        <li>En este caso, como tema de base se tomo el deporte “acrobacioa en tela” para el desarrollo del letering. Se generaron multiples pruebas sobre papel y luego tuvieron un reproceso digital.</li>
+                        <li>Presenta florituras, trazo modulado, finos y gruesos.</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/lettering/memoria.jpg" width="810px" height="523px" alt="memoria">
+                </div>
+            </article>
+
+            <!-- sindon drago -->
+            <article class="centrado">
+                <div class="duo-filas">
+                    <div class="infografia">
+                        <img src="img/sifon-drago/infografia.jpg" width="598px" height="1756px" alt="infografia">
+                    </div>
+                    <div class="columna-proyectos">
+                        <ul class="descripcion">
+                            <li><h5>INFOGRAFÍA</h5></li>
+                            <li>Trabajo desarrollado en la materia “espacio tipográfico 3” - Catedra Sanchez</li>
+                            <li>Desarrollo de infografía sobre producto Argentino.</li>
+                        </ul>
+                        <img src="img/sifon-drago/movil.jpg" width="600px" height="856px" alt="mockup de movil">
+                        <img src="img/sifon-drago/sifon.svg" width="286px" height="580px" alt="sifon vectorizado">
+                    </div>
+                </div>
+                <div class="duo-filas">
+                    <img src="img/sifon-drago/aperitivos.jpg" width="389px" height="577px" alt="lista de aperitivos">
+                    <ul class="descripcion">
+                        <li>Con un estilo Re versionado se generaron las ilustraciones a partir de las típicas publicidades en revistas y diarios de la época donde predominaba el uso de una tinta.</li>
+                        <li>El sifón Drago es un ícono nacional desde su invención.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- desplegable -->
+
 
             <section class="slider-programas">
                 <div class="slide-track">
@@ -137,12 +198,36 @@
                     <div class="slide">
                         <img src="img/programas/visual.svg"  alt="visual-code">
                     </div>
+                    <div class="slide">
+                        <img src="img/programas/ae.svg" width="50px" alt="after effects">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/ai.svg"  alt="ilustrator">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/css.svg"  alt="css">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/figma.svg"  alt="figma">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/github.svg"  alt="github">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/html.svg"  alt="html">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/id.svg"  alt="idesign">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/ps.svg"  alt="photoshop">
+                    </div>
+                    <div class="slide">
+                        <img src="img/programas/visual.svg"  alt="visual-code">
+                    </div>
                 </div>
             </section>
         </section>
-
-
-
     </main>
 
     <!-- PIE -->
@@ -154,9 +239,11 @@
                 <li><p>TP3_Porfolio / Cátedra Wischñevsky</p></li>
             </ul>
         </div>
-        <div class="redes">
-            <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
-            <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
+        <div class="volver">
+            <a href="#volver">volver</a>
+            <a href="#volver">
+                <img src="img/volver.svg" width="59px" height="45px" alt="flecha vover">
+            </a>
         </div>
     </footer>
 

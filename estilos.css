@@ -14,15 +14,9 @@ body {
     background-image: url(img/fondo-gris.jpg);
 }
 
-/* encabezado y la botonera */
-
-.logo{
-    max-width: 72px;
-    height: auto;
-}
+/* -----------------  botonera ------------------- */
 
 .botonera {
-    /*position: fixed;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,16 +31,19 @@ body {
     gap: 60px;
 }
 
-.botonera a {
+.boton {
     text-decoration: none;
     color: #DADADA;
 }
 
-.botonera a:hover {
+.boton:hover {
     padding-bottom: 5px;
     border-bottom: 3px solid #590D8B;
 }
 
+.logo:hover {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.50));
+}
 
 /*---------------------- PORTADA ----------------------- */
 
@@ -149,7 +146,28 @@ p {
     font-size: 1em;
 }
 
-/* --------------------------------------------------------- */
+/* ---------------------- SOBRE MI -------------------------- */
+
+.estudios-aptitudes {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 10%;
+}
+
+.estudios-aptitudes li {
+    padding: 5px 0px 5px 30px;
+}
+
+.estudios, .habilidades {
+    max-width: 485px;
+}
+
+.imgperfil {
+    filter: drop-shadow(-30px 99px 0px 0px #888);
+}
+
+/*----------*/
 
 .preprensa a {
     box-sizing: border-box;
@@ -162,11 +180,6 @@ p {
     color:#9A48D0;
 }
 
-
-.descripcion {
-    margin: 40px 0 10px 0;
-}
-
 .seccionuno {
     display: flex;
     gap: 100px;
@@ -174,16 +187,6 @@ p {
 
 .seccionuno img {
     box-shadow: 30px 70px 0 0 #888;
-}
-
-.dosfilas {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-}
-
-.estudios, .habilidades {
-    max-width: 485px;
 }
 
 .seccionuno ul {
@@ -216,6 +219,25 @@ footer p{
     padding-left: 40px;
 }
 
+/* sección de experiencia */
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    justify-content: center;
+}
+
+.preprensa {
+    display: flex;
+    gap: 100px;
+}
+
+.puesto {
+    max-width: 800px;
+    line-height: 30px;
+}
+
+
 /* Pie de imagen */
 .datos {
     width: 350px;
@@ -223,11 +245,9 @@ footer p{
     color: #ffffff;
     font-size: 12px;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .datos ul {
-    list-style: none;
     padding: 0;
     margin: 0;
     color: #ffffff;
@@ -236,11 +256,12 @@ footer p{
     line-height: 1.5;
 }
 
+
 /* -------------------------------------------------------- */
 
 .tipografia {
     filter: drop-shadow(-5px 3px 2px rgba(29, 29, 27, 0.50));
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     max-width: fit-content;
     height: auto;
     align-self: flex-start;
@@ -248,37 +269,43 @@ footer p{
 
 /* ----------------------- PROYECTOS ----------------------- */
 
-.thrasher {
+.centrado, .centrado-dos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding-bottom: 100px;
 }
 
-.fila1-thrasher{
+.centrado-dos {
+    background-color: rgb(154, 73, 208, 0.20);
+    margin: 100px 0px 100px 0px;
+    padding: 100px 0px 100px 0px;
+}
+
+.duo-filas-end {
     display: flex;
     align-items: flex-end;
     gap: 30px;
-    justify-content: center;
-    /*border-top: 3px solid #590D8B;*/
-    padding-top: 30px;
 }
 
-.fila1-thrasher ul, .fila3-thrasher ul {
-    width: 25%;
-}
-
-.fila1-thrasher h5 {
-    padding-bottom: 10px;
-}
-
-.fila2-thrasher {
+.duo-filas {
     display: flex;
     gap: 30px;
 }
 
-.fila2-thrasher div {
+.descripcion {
+    width: 400px;
+}
+
+.descripcion li {
+    padding-top: 10px;
+}
+
+h5 {
+    letter-spacing: 1px;
+}
+
+.columna-thrasher{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -300,24 +327,48 @@ footer p{
 .diablito{
     position: absolute;
     bottom: -10%;
-    left: 20%;
+    left: -12%;
 }
 
-.marciano {
-    animation: move infinite 5s alternate;
-}
-
-@keyframes move {
-    from {
-        transform: rotate(-20px);
+@keyframes martian {
+    0% {
+        transition: rotate(1deg);
     }
 
-    to {
-        transform: rotate(50px);
+    100% {
+        transition: rotate(360deg);
     }
 }
 
-/* ----------------------- SLIDER PROGRAMAS ------------------ */
+#marciano {
+    animation: martian infinite 5s alternate;
+}
+
+.diablito {
+    animation: dos 10s infinite alternate ease-in-out;
+}
+
+@keyframes dos {
+    0% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+.columna-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.infografia:hover {
+    background-image: url(img/sifon-drago/infografia-grilla.jpg);
+}
+
+/* ----------------------- cinta PROGRAMAS ------------------ */
 
 .slider-programas{
     overflow: hidden;
@@ -348,11 +399,14 @@ footer p{
 }
 
 /* ----------------------- FORMULARIO ---------------------- */
+.contacto {
+    height: 100vh;
+}
+
 .formulario{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1500px;
     padding: 80px 170px;
 }
 
@@ -429,27 +483,7 @@ option:hover {
     color: #DADADA;
 }
 
-
-
-/* sección de experiencia */
-.experiencia {
-    display: flex;
-    flex-direction: column;
-    height: 900px;
-    justify-content: center;
-}
-
-.preprensa {
-    display: flex;
-    gap: 100px;
-}
-
-.puesto {
-    max-width: 800px;
-    line-height: 30px;
-}
-
-/* PIE */
+/* ---------------------------- PIE ---------------------------- */
 footer {
     display: flex;
     justify-content: space-between;
@@ -460,19 +494,24 @@ footer {
     font-size: 0.8em;
 }
 
-.footer-derecha{
+.footer-derecha {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.redes {
+.volver {
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
+.volver a {
+    font-size: 1.2em;
+    color: #DADADA;
+    letter-spacing: 0.1em;
+}
 
-/* flotante redes */
+/* -------------------- flotante redes ----------------------- */
 .redes-fixed {
     position: fixed;
     top: 40%;

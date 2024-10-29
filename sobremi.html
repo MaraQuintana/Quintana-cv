@@ -10,21 +10,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="volver">
     <!-- NAV -->
     <header>
         <nav class="botonera">
-            <img class="logo"  src="img/logo-mq.svg" witdth="72px" heigth="37px" alt="logo"/>
+            <div>
+                <a href="index.html">
+                    <img class="logo" src="img/logo-mq.svg" witdth="100%" heigth="auto" alt="logo">
+                </a>
+            </div>    
             <ul>
-                <li><a href="proyectos.html" target="_self">Proyectos</a></li>
-                <li><a href="sobremi.html" target="_self">Sobre mí</a></li>
-                <li><a href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
+                <li><a class="boton" href="proyectos.html" target="_self">Proyectos</a></li>
+                <li><a class="boton" href="sobremi.html" target="_self">Sobre mí</a></li>
+                <li><a class="boton" href="contacto.html" subjet="Nueva propuesta laboral" target="_self">Trabajemos juntxs</a></li>  
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <section class="perfil">
+            <div>
+                <img class="imgperfil" src="img/mara.jpg" witdth="350px" heigth="438px" alt="Mi cara"/>
+                <aside class="datos">
+                    <h3>Datos irrelevantes</h3>
+                    <ul>
+                        <li>Nací en marzo del 2002 y si claro, soy de aries.</li>
+                        <li>Localidad: Burzaco City</li>
+                    </ul>
+                </aside>
+            </div>    
+            <div>
+                <article class="descripcion">
+                    <p>Estudiante de diseño y comunicación visual, en la universidad nacional de lanús desde el año 2020, donde a todos nos toco reorganizar la vida diaria.</p>
+                    <p>Como objetivos personales quiero crear diseños que inspiren y que aporten valor visual y funcional a las marcas, contribuyendo al desarrollo de identidades gráficas sólidas y memorables.</p>
+                </article>
+                <div class="estudios-aptitudes">
+                    <div class="aptitudes">
+                        <h2>Aptitudes</h2>
+                        <ul>
+                            <li>Creatividad</li>
+                            <li>Resolución de problemas</li>
+                            <li>Adaptación</li>
+                            <li>Habilidades comunicativas</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Responsabilidad</li>
+                        </ul> 
+                    </div>
+                    <div class="estudios">
+                        <h2>Estudios</h2> 
+                        <ul>
+                            <li>Bachiller en Economía y Administración - Colegio Instituto Amancio Alcorta (2019)</li>
+                            <li>Licenciatura en Diseño y Comunicación Visual - UNLa (2020-actualidad)</li>
+                            <li>Adiestración y educaión canina (2022)</li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+            
+        </section>
     </main>
 
     <!-- PIE -->
@@ -36,9 +79,11 @@
                 <li><p>TP3_Porfolio / Cátedra Wischñevsky</p></li>
             </ul>
         </div>
-        <div class="redes">
-            <a href="https://www.behance.net/maraquintana"><img src="img/be.svg" alt="behance" width="30px" height="30px"></a>
-            <a href="https://www.instagram.com/quintanamara_/"><img src="img/instagram.svg" alt="instagram" width="30px" height="30px"></a>
+        <div class="volver">
+            <a href="#volver">volver</a>
+            <a href="#volver">
+                <img src="img/volver.svg" width="59px" height="45px" alt="flecha vover">
+            </a>
         </div>
     </footer>
 
