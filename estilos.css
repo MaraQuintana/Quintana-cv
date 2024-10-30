@@ -45,11 +45,10 @@ body {
     filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.50));
 }
 
-/*---------------------- PORTADA ----------------------- */
+/*---------------------- PORTADA - index ----------------------- */
 
 .portada {
     background-image: url(img/img-presentacion.jpg);
-    width: 100%;
     height: 850px;
     display: flex;
     justify-content: space-between;
@@ -64,7 +63,7 @@ body {
     gap: 20px;
 }
 
-.quintana img {
+.q-tipografia {
     width: 1030px;
     height: auto;
     filter: drop-shadow(-4px 4px 2px rgba(89, 13, 139, 0.50));
@@ -92,7 +91,7 @@ body {
 /* ---------------------- HOLA -------------------------- */
 .presentacion {
     position: relative;
-    margin: 100px 0px 100px 0px;
+    margin: 200px 0px 200px 0px;
 }
 
 .presentacion img {
@@ -116,6 +115,23 @@ body {
     right: 23%;
     border-bottom: 3px solid #590D8B;
 }
+
+@media screen and (max-width: 600px) {
+
+    .portada {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 50px;
+    }
+
+    .q-tipografia {
+        width: 450px;
+        
+    }
+}
+
 
 /* ----------------------- ESTILOS DE H ---------------------- */
 
@@ -267,25 +283,56 @@ h5 {
     position: absolute;
     bottom: -10%;
     left: -12%;
+
+    animation: dos 5s infinite alternate ease-in-out;
+}
+
+.slider-thrasher {
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+
+    
+}
+  
+.slider-thrasher ul {
+    display: flex;
+    width: 300%;
+    animation: latas 9s infinite alternate-reverse ease-in-out;
+}
+
+.slider-thrasher li {
+    width: 100%;
+    height: auto;
+}
+
+.slider-thrasher img {
+    width: 100%;
+}
+
+@keyframes latas {
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+    
+    50% {margin-left: -100%;}
+    60% {margin-left: -100%;}
+
+    90% {margin-left: -200%;}
+    100% {margin-left: -200%;}
 }
 
 #marciano {
-    animation: martian infinite 3s alternate ease-in-out;
+    animation: martian infinite 5s alternate ease-in-out;
 }
-
 
 @keyframes martian {
     0% {
-        transform: rotate(1deg);
+        transform: rotate(30deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-30deg);
     }
-}
-
-.diablito {
-    animation: dos 5s infinite alternate ease-in-out;
 }
 
 @keyframes dos {
@@ -315,7 +362,7 @@ h5 {
 	width: 100%;
 	justify-content: center;
 	height: 100vh;
-	background-color: #000000;
+    background-image: url(img/fondo-gris.jpg);
 	position: absolute;
 	top: 0;
 	z-index: 10;
@@ -354,15 +401,59 @@ h5 {
 /*------IDS CON LAS IMÁGENES DE LA GALERÍA-------*/
 
 #foto-1 {
-	background-image: url("img/foto-1.jpg");
+	background-image: url("img/thrasher/latas-flotando.jpg");
 }
 
 #foto-2 {
-	background-image: url("img/foto-2.jpg")
+	background-image: url("img/thrasher/chica-grafity.jpg")
 }
 
 #foto-3 {
-	background-image:url("img/foto-3.jpg");
+	background-image:url("img/thrasher/lata-violeta.jpg");
+}
+
+#foto-4 {
+	background-image:url("img/thrasher/lata-azul.jpg");
+}
+
+#foto-5 {
+	background-image:url("img/thrasher/lata-roja.jpg");
+}
+
+#foto-6 {
+	background-image:url("img/thrasher/muck-patineta.jpg");
+}
+
+#foto-7 {
+	background-image:url("img/lettering/afiches.jpg");
+}
+
+#foto-8 {
+	background-image:url("img/lettering/entradas.jpg");
+}
+
+#foto-9 {
+	background-image:url("img/lettering/memoria.jpg");
+}
+
+#foto-10 {
+	background-image:url("img/sifon-drago/infografia.jpg");
+}
+
+#foto-11 {
+	background-image:url("img/sifon-drago/movil.jpg");
+}
+
+#foto-12 {
+	background-image:url("img/sifon-drago/aperitivos.jpg");
+}
+
+#foto-13 {
+	background-image:url("img/desplegable/desplegable.jpg");
+}
+
+#foto-14 {
+	background-image:url("img/desplegable/cap-figma.jp");
 }
 
 /* ----------------------- cinta PROGRAMAS ------------------ */
