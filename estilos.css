@@ -25,14 +25,12 @@ body {
     background-color: rgb(39, 39, 39);
 }
 
-.botonera ul {
+#menu-nav {
     display: flex;
-    list-style: none;
     gap: 60px;
 }
 
 .boton {
-    text-decoration: none;
     color: #DADADA;
 }
 
@@ -43,6 +41,17 @@ body {
 
 .logo:hover {
     filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.50));
+}
+
+/* menú hamburguesa */
+
+.menu-icon {
+	display: none;
+	font-size: 1em;
+	cursor: pointer;
+}
+#menu-toggle {
+	display: none;
 }
 
 /*---------------------- PORTADA - index ----------------------- */
@@ -94,9 +103,11 @@ body {
     margin: 200px 0px 200px 0px;
 }
 
-.presentacion img {
+.hola {
     padding-left: 14%;
     width: auto;
+    margin-bottom: 30px;
+    filter: drop-shadow(-5px 3px 2px rgba(29, 29, 27, 0.50));
 }
 
 .texto-presentacion {
@@ -114,24 +125,9 @@ body {
     bottom: 20px;
     right: 23%;
     border-bottom: 3px solid #590D8B;
+    padding-left: 14%;
+    width: auto;
 }
-
-@media screen and (max-width: 600px) {
-
-    .portada {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 50px;
-    }
-
-    .q-tipografia {
-        width: 450px;
-        
-    }
-}
-
 
 /* ----------------------- ESTILOS DE H ---------------------- */
 
@@ -626,4 +622,90 @@ footer {
 	background-size: cover;
 	cursor: none;
 	pointer-events: none; 
+}
+
+/* ------------------- MEDIA QUERIES / INDEX ---------------------*/
+
+@media screen and (max-width: 600px) {
+
+    .botonera {
+        padding: 20px;
+    }
+
+    #menu-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        height: 100vh;
+        background-color: #1D1D1B;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 24%;
+        transition: background 0.4s ease;
+    }
+	#menu-nav li {
+		display: flex;
+		text-align: center;
+	}
+
+    #menu-nav li a {      
+        font-weight: 600;
+    }
+
+    .menu-icon {
+		display: block;
+		z-index: 1;
+		background-image: url('img/iconos/menu.svg');
+		background-size: cover;
+		width: 33px;
+		height: 33px;
+		transition: background-image 0.4s ease;
+	}
+	#menu-toggle:checked + .menu-icon + #menu-nav {
+		display: flex;
+	}
+	#menu-toggle:checked + .menu-icon {
+		background-image: url('img/iconos/cruz.svg');
+		width: 30px;
+		height: 30px;
+	}
+
+    /*-------------------------*/
+
+    .portada {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 50px;
+        padding: 0px;
+        height: 90vh;
+    }
+
+    .q-tipografia {
+        width: 100%;        
+    }
+
+    .texto-presentacion {
+        padding: 20px 10px 30px 10%;
+        max-width: 80%;  
+    }        
+
+    .diamantes {
+        bottom: 20px;
+        right: 0%;
+    }
+
+    .redes-fixed {
+        display: none;
+    }
+
+    footer {
+        align-items: center;
+        padding: 20px 0px;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
 }
