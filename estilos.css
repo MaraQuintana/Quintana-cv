@@ -14,6 +14,11 @@ body {
     background-image: url(img/fondo-gris.jpg);
 }
 
+main {
+    position: relative;
+    z-index: 1;
+}
+
 /* -----------------  botonera ------------------- */
 
 .botonera {
@@ -21,8 +26,9 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 135px;
+    padding: 20px 7%;
     background-color: rgb(39, 39, 39);
+    z-index: 2;
 }
 
 #menu-nav {
@@ -597,15 +603,23 @@ footer {
     top: 40%;
     right: 0;
     background-color: rgb(39, 39, 39);
-    padding: 10px;
+    padding: 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 13px;
+    z-index: 2;
 }
 
-.redes-fixed img:hover {
+.redes-fixed a {
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.redes-fixed a:hover {
     border-bottom: 3px solid #888;
+    margin-bottom: -3px;
 }
 
 /* >> CURSOR >> */
@@ -660,14 +674,18 @@ footer {
 		height: 33px;
 		transition: background-image 0.4s ease;
 	}
+
 	#menu-toggle:checked + .menu-icon + #menu-nav {
 		display: flex;
 	}
+
 	#menu-toggle:checked + .menu-icon {
-		background-image: url('img/iconos/cruz.svg');
-		width: 30px;
-		height: 30px;
-	}
+        background-image: url(img/iconos/cruz.svg);
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        right: 24px;
+    }
 
     /*-------------------------*/
 
