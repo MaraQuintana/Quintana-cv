@@ -203,8 +203,6 @@ input[type="radio"] {
 }
 
 .btn {
-    border: 1px solid white;
-    background: #ffffff;
     position: absolute;
     bottom: 12%;
     width: 30px;
