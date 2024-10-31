@@ -20,3 +20,17 @@ function newFunction() {
         });
     });
 }
+
+/* galeria ampliada */
+
+let scrollPosition = 0;
+
+function mostrarGaleria() {
+    scrollPosition = window.scrollY; // Guarda la posición actual
+    document.getElementById("galeria").style.display = "flex";
+}
+
+function ocultarGaleria() {
+    document.getElementById("galeria").style.display = "none";
+    window.scrollTo(0, scrollPosition); // Restaura la posición guardada
+}
