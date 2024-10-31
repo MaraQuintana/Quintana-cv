@@ -204,10 +204,6 @@ p {
     max-width: 485px;
 }
 
-.imgperfil {
-    filter: drop-shadow(-30px 99px 0px 0px #888);
-}
-
 /* -------------------------------------------------------- */
 
 .tipografia {
@@ -698,6 +694,8 @@ footer {
         right: 0%;
     }
 
+    /*------------------------------------*/
+
     .redes-fixed {
         display: none;
     }
@@ -707,5 +705,29 @@ footer {
         padding: 20px 0px;
         flex-direction: column-reverse;
         gap: 30px;
+    }
+
+    /*-------------------------------------*/
+
+    .perfil {
+        padding: 50px 30px;
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .estudios-aptitudes {
+        padding-top: 30px;
+    }
+
+    /*------------------------------------*/
+
+    .tipografia {
+        margin-bottom: 30px;
+    }
+
+    .formulario{
+        padding: 50px 30px;
     }
 }
