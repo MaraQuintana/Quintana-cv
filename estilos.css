@@ -150,6 +150,29 @@ input[type="radio"] {
     position: relative;
     height: 920px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.container h2 {
+    padding: 0px 30px 5px 30px;
+    margin: 0px;
+}
+
+.container a {
+    background-color: rgb(154, 73, 208, 0.20);
+    padding: 15px;
+    border-radius: 20px;
+    color: #1D1D1B;
+}
+
+.container a:hover {
+    background-color: #888;
+    box-shadow: 0px 0px 3px #888;
+    color: #590D8B;
 }
 
 .slide-wrapper {
@@ -160,8 +183,6 @@ input[type="radio"] {
     height: 750px;
     overflow: hidden;
 }
-
-/*Slides*/
 
 #slide-role {
     background: inherit;
@@ -203,22 +224,22 @@ input[type="radio"] {
 
 .btn {
     position: absolute;
-    bottom: 10%;
+    right: 10%;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
 .btn:nth-of-type(1) {
-    left: 45%;
+    bottom: 55%;
 }
 
 .btn:nth-of-type(2) {
-    left: 50%;
+    bottom: 50%;
 }
 
 .btn:nth-of-type(3) {
-    left: 55%;
+    bottom: 45%;
 }
 
 .btn:hover {
@@ -271,7 +292,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     border-bottom: 2px solid #9A48D0;
     width: fit-content;
@@ -296,7 +317,7 @@ p {
     justify-content: center;
     padding: 100px 0px;
     gap: 50px;
-    height: 90vh;
+    height: 100vh;
 }
 
 .datos ul li {
@@ -324,6 +345,13 @@ p {
     display: flex;
     gap: 10%;
     justify-content: space-between;
+}
+
+.aptitudes {
+    flex: 2;
+}
+.estudios {
+    flex: 3;
 }
 
 .estudios-aptitudes li {
@@ -386,11 +414,6 @@ p {
 
 .descripcion li {
     padding-top: 10px;
-}
-
-h5 {
-    letter-spacing: 2px;
-    font-size: 1.2em;
 }
 
 .columna-thrasher{
@@ -837,13 +860,22 @@ footer {
         width: 100%;        
     }
 
+    .tipografia {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
     .presentacion {
-        margin: 100px 0px 0px 0px;
+        margin: 50px 0px 0px 0px;
     }
 
     .texto-presentacion {
         max-width: 80%;  
     }        
+
+    #hola {
+        height: auto;
+    }
 
     .diamantes {
         bottom: 20px;
@@ -870,8 +902,8 @@ footer {
     /*-------------------------------------*/
 
     .perfil {
-        padding: 50px 30px;
-        height: 90vh;
+        height: auto;
+        padding: 50px 20px;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -893,13 +925,16 @@ footer {
 
     /*-----------------------------------*/
 
-    .container{
-        align-content: center;
+    .container {
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin: 50px 0px;
     }
 
     .slide-wrapper {
-        width: 360px;
-        height: 675px;
+        width: 280px;
+        height: 525px;
     }
     .btn:nth-of-type(1) {
         left: 90%;
